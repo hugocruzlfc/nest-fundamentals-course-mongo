@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
-import { Coffee, CoffeeSchema } from './entities';
+import { Coffee, CoffeeSchema, EventSchema, Event } from './entities';
 import { CoffeesController } from './coffees.controller';
 import { CoffeesService } from './coffees.service';
 
@@ -10,6 +10,10 @@ import { CoffeesService } from './coffees.service';
       {
         name: Coffee.name,
         schema: CoffeeSchema,
+      },
+      {
+        name: Event.name,
+        schema: EventSchema,
       },
     ]),
   ],
