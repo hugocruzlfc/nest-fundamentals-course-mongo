@@ -44,4 +44,5 @@ $ npm run test:cov
 
 ```bash
   npm i mongoose @nestjs/mongoose
+  npm i class-validator class-transformer
 ```
